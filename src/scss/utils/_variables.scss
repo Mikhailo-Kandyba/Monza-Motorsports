@@ -1,0 +1,87 @@
+// Variables
+
+//colors
+$transparent:               transparent;
+$color-primary-100:         #000;
+$color-primary-200:         #f8f8f8;
+$color-primary-300:         #df4e3c;
+
+$color-secondary-100:       #aeaeae;
+$color-secondary-200:       #8d8d8d;
+$color-secondary-300:       #bdbdbd;
+$color-secondary-400:       #c4c4c4;
+$color-secondary-500:       #fff;
+$color-secondary-600:       #959595;
+$color-secondary-700:       #507a36;
+
+// fonts
+$base-font-default:         'NotoSans-Regular', sans-serif;
+$poppins-font:              'Poppins', sans-serif;
+
+$font-family-noto-bold:     'NotoSans-Bold', sans-serif;
+$font-family-noto-semi:     'NotoSans-SemiBold', sans-serif;
+$font-family-noto-medium:   'NotoSans-Medium', sans-serif;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$base-text-color:           $color-primary-100;
+$base-background:           $color-secondary-500;
+$base-font-family:          $base-font-default;
+$font-size-base:            20px;
+$line-height-base:          24px;
+$base-min-width:            320px;
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12 !default;
+$grid-gutter-width:           20px !default;
+$grid-row-columns:            6 !default;
+
+// Typography
+//
+// Font, line-height, and color for body text, headings, and more.
+// stylelint-enable value-keyword-case
+
+$h1-font-size:                50px;
+$h2-font-size:                $h1-font-size;
+$h3-font-size:                30px;
+$h4-font-size:                25px;
+$h5-font-size:                20px;
+$h6-font-size:                17px;
+
+// Hedings line-height
+$h1-line-height:                68px;
+$h2-line-height:                75px;
+$h3-line-height:                45px;
+$h4-line-height:                35px;
+$h5-line-height:                28px;
+$h6-line-height:                24px;
+
+// Font-weight
+$font-weight-700:              700;
+$font-weight-600:              600;
+$font-weight-500:              500;
+$font-weight-400:              400;
+$font-weight-300:              300;
+
+//$headings-margin-bottom:      30px;
+$headings-font-weight:        400;
+
+// Buttons
+
+$btn-font-size:               15px !default;
+
+// Forms
+
+//$input-bg:                              $white !default;
+//$input-disabled-bg:                     $gray-200 !default;
+//
+//$input-color:                           $gray-700 !default;
+//$input-border-color:                    $gray-400 !default;
+//$input-border-width:                    $input-btn-border-width !default;
+//
+//$input-border-radius:                   $border-radius !default;

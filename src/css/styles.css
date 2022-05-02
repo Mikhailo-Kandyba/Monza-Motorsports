@@ -1,0 +1,233 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  height: 100%;
+  background: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  font-family: "NotoSans-Regular", sans-serif;
+  font-weight: 400;
+  min-width: 320px;
+  color: #000; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+  caption-side: top; }
+
+a {
+  color: #000;
+  text-decoration: none; }
+
+button {
+  cursor: pointer; }
+
+:focus {
+  box-shadow: none !important; }
+
+img {
+  width: 100%;
+  height: auto; }
+
+input {
+  outline: none; }
+
+* {
+  box-sizing: border-box; }
+
+#wrapper {
+  overflow: hidden;
+  position: relative; }
+
+@font-face {
+  font-family: 'NotoSans-Bold';
+  src: url("../../font/noto-sans/NotoSans-Bold.woff") format("woff"), url("../../font/noto-sans/NotoSans-Bold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NotoSans-SemiBold';
+  src: url("../../font/noto-sans/NotoSans-SemiBold.woff") format("woff"), url("../../font/noto-sans/NotoSans-SemiBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NotoSans-Light';
+  src: url("../../font/noto-sans/NotoSans-Light.woff") format("woff"), url("../../font/noto-sans/NotoSans-Light.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NotoSans-Medium';
+  src: url("../../font/noto-sans/NotoSans-Medium.woff") format("woff"), url("../../font/noto-sans/NotoSans-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'NotoSans-Regular';
+  src: url("../../font/noto-sans/NotoSans-Regular.woff") format("woff"), url("../../font/noto-sans/NotoSans-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+thead {
+  color: #df4e3c; }
+
+tr {
+  border-bottom: 1px solid #bdbdbd; }
+
+th,
+td {
+  padding: 30px 0;
+  vertical-align: middle; }
+  th:nth-child(1),
+  td:nth-child(1) {
+    width: 35%; }
+
+h1 {
+  font-family: "NotoSans-Bold", sans-serif;
+  font-size: 50px;
+  line-height: 68px;
+  font-weight: 700; }
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  font-size: 50px;
+  line-height: 75px; }
+
+h3 {
+  font-family: "NotoSans-SemiBold", sans-serif;
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 600; }
+
+h4 {
+  font-family: "NotoSans-SemiBold", sans-serif;
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 600; }
+
+h5 {
+  font-family: "NotoSans-Medium", sans-serif;
+  font-size: 20px;
+  line-height: 28px;
+  font-weight: 500; }
+
+h6 {
+  font-family: "NotoSans-Regular", sans-serif;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 400; }
+
+.w-100 {
+  width: 100%; }
+
+.btn {
+  font-size: 15px;
+  line-height: 21px;
+  border-radius: 15px;
+  padding: 10px;
+  width: 100%;
+  color: #f8f8f8; }
+  .btn:hover {
+    background: transparent; }
+  .btn:disabled {
+    opacity: 0.4; }
+
+.btn-dark {
+  border: 2px solid #000;
+  background: #000; }
+  .btn-dark:hover {
+    color: #000;
+    background: #fff;
+    border-color: #000; }
+  .btn-dark:active {
+    border: 2px solid #000;
+    background: #000;
+    color: #fff; }
+
+.btn-danger {
+  border: 2px solid #df4e3c;
+  background: #df4e3c; }
+  .btn-danger:hover {
+    color: #df4e3c;
+    background: #fff;
+    border-color: #df4e3c; }
+  .btn-danger:active {
+    border: 2px solid #df4e3c;
+    background: #df4e3c;
+    color: #fff; }
+
+.btn-outline-light {
+  font-family: "NotoSans-SemiBold", sans-serif;
+  font-weight: 500;
+  border: 2px solid #f8f8f8;
+  background: transparent; }
+  .btn-outline-light:hover {
+    border: 2px solid #f8f8f8;
+    background: #f8f8f8;
+    color: #000; }
+  .btn-outline-light:active {
+    border: 2px solid #f8f8f8;
+    background: #000;
+    color: #f8f8f8; }
+
+.btn-light {
+  border: 2px solid #f8f8f8;
+  background: #f8f8f8;
+  color: #000; }
+  .btn-light:hover {
+    border: 2px solid #f8f8f8;
+    background: #000;
+    color: #f8f8f8; }
+  .btn-light:active {
+    border: 2px solid #f8f8f8;
+    background: #f8f8f8;
+    color: #000; }
+
+.btn-md {
+  font-size: 20px;
+  line-height: 27px;
+  padding: 12px; }
+
+.btn-lg {
+  padding: 15px; }
+
+.bg-dark {
+  background-color: #000 !important; }
