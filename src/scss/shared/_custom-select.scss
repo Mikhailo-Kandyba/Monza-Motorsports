@@ -1,0 +1,128 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+// Style the dropdown
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: $color-secondary-500;
+  border-radius: 15px;
+  border: 1px solid $color-secondary-400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  height: 48px;
+  outline: none;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  max-width: 170px;
+  width: 100%;
+  padding: 0 17px;
+
+  // Arrow
+  &:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 21px;
+    width: 13px;
+    height: 8px;
+    background-image: url("../images/pointer-select.svg");
+  }
+
+  &.open {
+    border-color: $color-secondary-400;
+
+    @extend :active;
+    &:after {
+      display: none;
+    }
+
+    .list {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0);
+    }
+  }
+
+  // List and options
+  .list {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid $color-secondary-400;
+    border-top: none;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    transform-origin: 50% 0;
+    transform: scale(.75) translateY(- 42px / 2);
+    transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
+    z-index: 9;
+
+    &:hover .option:not(:hover) {
+      background-color: transparent !important;
+    }
+  }
+
+  .option {
+    cursor: pointer;
+    font-size: $font-size-base - 7;
+    list-style: none;
+    outline: none;
+    padding: 3px 17px;
+    text-align: left;
+    transition: all 0.2s;
+
+    &:hover {
+      color: $color-primary-300;
+    }
+
+    &.selected {
+      font-family: $font-family-noto-semi;
+      font-weight: $font-weight-600;
+      font-size: $font-size-base - 5;
+
+      &:hover {
+        color: $color-primary-100;
+        cursor: default;
+      }
+    }
+
+    &.disabled {
+      background-color: transparent;
+      cursor: default;
+    }
+  }
+}
+
+.nice-select.open {
+  border-bottom: none;
+  border-radius: 15px 15px 0 0;
+}
+
+// Use display instead of opacity for IE <= 10
+.no-csspointerevents .nice-select {
+  .list {
+    display: none;
+  }
+
+  &.open {
+    .list {
+      display: block;
+    }
+  }
+}
+
+.current {
+  font-size: $font-size-base - 5;
+  line-height: $line-height-base - 3;
+}

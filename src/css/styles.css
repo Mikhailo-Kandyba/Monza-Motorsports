@@ -158,6 +158,9 @@ h6 {
 .w-100 {
   width: 100%; }
 
+.text-muted {
+  color: #8d8d8d; }
+
 .btn {
   font-size: 15px;
   line-height: 21px;
@@ -177,7 +180,7 @@ h6 {
     color: #000;
     background: #fff;
     border-color: #000; }
-  .btn-dark:active {
+  .btn-dark:active, .btn-dark.nice-select.open {
     border: 2px solid #000;
     background: #000;
     color: #fff; }
@@ -189,7 +192,7 @@ h6 {
     color: #df4e3c;
     background: #fff;
     border-color: #df4e3c; }
-  .btn-danger:active {
+  .btn-danger:active, .btn-danger.nice-select.open {
     border: 2px solid #df4e3c;
     background: #df4e3c;
     color: #fff; }
@@ -203,7 +206,7 @@ h6 {
     border: 2px solid #f8f8f8;
     background: #f8f8f8;
     color: #000; }
-  .btn-outline-light:active {
+  .btn-outline-light:active, .btn-outline-light.nice-select.open {
     border: 2px solid #f8f8f8;
     background: #000;
     color: #f8f8f8; }
@@ -216,7 +219,7 @@ h6 {
     border: 2px solid #f8f8f8;
     background: #000;
     color: #f8f8f8; }
-  .btn-light:active {
+  .btn-light:active, .btn-light.nice-select.open {
     border: 2px solid #f8f8f8;
     background: #f8f8f8;
     color: #000; }
@@ -231,3 +234,219 @@ h6 {
 
 .bg-dark {
   background-color: #000 !important; }
+
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer; }
+  .checkbox-custom + .checkbox-custom-label:before {
+    content: '';
+    position: absolute;
+    top: 2px;
+    left: 0;
+    background: transparent;
+    border: 2px solid #8d8d8d;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px; }
+  .checkbox-custom + .checkbox-custom-label:after {
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    width: 11px;
+    height: 7px;
+    border: 2px solid #fff;
+    border-top: none;
+    border-right: none;
+    transform: rotate(-50deg);
+    display: none; }
+  .checkbox-custom:checked + .checkbox-custom-label {
+    color: #df4e3c; }
+    .checkbox-custom:checked + .checkbox-custom-label:before {
+      background: #df4e3c;
+      border: 2px solid #df4e3c; }
+    .checkbox-custom:checked + .checkbox-custom-label:after {
+      display: block; }
+  .checkbox-custom:disabled + .checkbox-custom-label {
+    color: #959595;
+    cursor: default; }
+    .checkbox-custom:disabled + .checkbox-custom-label:after {
+      display: block; }
+    .checkbox-custom:disabled + .checkbox-custom-label:before {
+      background: #8d8d8d;
+      border: 2px solid #8d8d8d; }
+
+.checkbox-custom-label {
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 26px;
+  color: #8d8d8d;
+  position: relative;
+  padding-left: 32px; }
+
+.nice-select {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-color: #fff;
+  border-radius: 15px;
+  border: 1px solid #c4c4c4;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  font-weight: normal;
+  height: 48px;
+  outline: none;
+  position: relative;
+  text-align: left !important;
+  transition: all 0.2s ease-in-out;
+  user-select: none;
+  white-space: nowrap;
+  max-width: 170px;
+  width: 100%;
+  padding: 0 17px; }
+  .nice-select:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 21px;
+    width: 13px;
+    height: 8px;
+    background-image: url("../images/pointer-select.svg"); }
+  .nice-select.open {
+    border-color: #c4c4c4; }
+    .nice-select.open:after {
+      display: none; }
+    .nice-select.open .list {
+      opacity: 1;
+      pointer-events: auto;
+      transform: scale(1) translateY(0); }
+  .nice-select .list {
+    background-color: #fff;
+    border-radius: 0 0 15px 15px;
+    border: 1px solid #c4c4c4;
+    border-top: none;
+    opacity: 0;
+    overflow: hidden;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    right: -1px;
+    transform-origin: 50% 0;
+    transform: scale(0.75) translateY(-42px/2);
+    transition: all 0.2s cubic-bezier(0.5, 0, 0, 1.25), opacity 0.15s ease-out;
+    z-index: 9; }
+    .nice-select .list:hover .option:not(:hover) {
+      background-color: transparent !important; }
+  .nice-select .option {
+    cursor: pointer;
+    font-size: 13px;
+    list-style: none;
+    outline: none;
+    padding: 3px 17px;
+    text-align: left;
+    transition: all 0.2s; }
+    .nice-select .option:hover {
+      color: #df4e3c; }
+    .nice-select .option.selected {
+      font-family: "NotoSans-SemiBold", sans-serif;
+      font-weight: 600;
+      font-size: 15px; }
+      .nice-select .option.selected:hover {
+        color: #000;
+        cursor: default; }
+    .nice-select .option.disabled {
+      background-color: transparent;
+      cursor: default; }
+
+.nice-select.open {
+  border-bottom: none;
+  border-radius: 15px 15px 0 0; }
+
+.no-csspointerevents .nice-select .list {
+  display: none; }
+
+.no-csspointerevents .nice-select.open .list {
+  display: block; }
+
+.current {
+  font-size: 15px;
+  line-height: 21px; }
+
+.form-control {
+  border-radius: 15px;
+  border: 1px solid #bdbdbd; }
+  .form-control::placeholder {
+    font-size: 15px;
+    color: #8d8d8d; }
+  .form-control:focus {
+    border: 1px solid #8d8d8d; }
+
+.invalid-feedback {
+  font-size: 10px;
+  line-height: 26px;
+  padding-left: 16px; }
+
+.form-control.is-valid {
+  border-color: #507a36;
+  background-image: url("../images/check-icon.svg"); }
+
+.form-control.is-invalid {
+  border-color: #df4e3c;
+  background-image: url("../images/close-icon.svg"); }
+
+.card {
+  max-width: 295px;
+  width: 100%;
+  box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
+  border-radius: 0;
+  background: #fff;
+  border: none; }
+
+.card-body {
+  padding: 21px 21px 5px; }
+
+.card-text {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 26px; }
+
+.card-link {
+  font-family: "NotoSans-Regular", sans-serif;
+  line-height: 24px;
+  color: #000; }
+  .card-link:hover {
+    text-decoration: underline;
+    color: #000; }
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 13px; }
+
+.card > .list-group {
+  border: none; }
+
+.list-group-flush > .list-group-item {
+  border-width: 0 1px 0; }
+
+.list-group-item {
+  font-family: "NotoSans-Light", sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 0 8px; }
+  .list-group-item:first-child {
+    border-width: 0; }
+  .list-group-item:last-child {
+    border-width: 0; }
+
+.card-price {
+  font-family: "NotoSans-Medium", sans-serif;
+  font-weight: 500;
+  line-height: 27px; }
+
+.card-footer {
+  background: #fff;
+  padding: 15px 21px 35px; }

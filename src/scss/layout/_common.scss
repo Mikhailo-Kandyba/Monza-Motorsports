@@ -1,2 +1,76 @@
 @import "../utils/variables";
 @import "../utils/mixin";
+
+.card {
+  max-width: 295px;
+  width: 100%;
+  box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
+  border-radius: 0;
+  background: $color-secondary-500;
+  border: none;
+}
+
+.card-body {
+  padding: 21px 21px 5px;
+}
+
+.card-text {
+  font-family: $poppins-font;
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base + 2;
+}
+
+.card-link {
+  font-family: $base-font-family;
+  line-height: $line-height-base;
+  color: $color-primary-100;
+
+  &:hover {
+    text-decoration: underline;
+    color: $color-primary-100;
+  }
+}
+
+.list-group {
+  display: flex;
+  flex-direction: row;
+  padding: 10px 13px;
+}
+
+.card {
+  > .list-group {
+    border: none;
+  }
+}
+
+.list-group-flush{
+  >.list-group-item {
+    border-width: 0 1px 0;
+  }
+}
+
+.list-group-item {
+  font-family: $font-family-noto-light;
+  font-size: $font-size-base - 6;
+  line-height: $line-height-base - 5;
+  padding: 0 8px;
+
+  &:first-child {
+    border-width: 0;
+  }
+
+  &:last-child {
+    border-width: 0;
+  }
+}
+
+.card-price {
+  font-family: $font-family-noto-medium;
+  font-weight: $font-weight-500;
+  line-height: $line-height-base + 3;
+}
+
+.card-footer {
+  background: $color-secondary-500;
+  padding: 15px 21px 35px;
+}

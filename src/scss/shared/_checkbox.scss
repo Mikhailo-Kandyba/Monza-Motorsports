@@ -1,0 +1,82 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+  cursor: pointer;
+
+  + .checkbox-custom-label {
+      &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        left: 0;
+        background: $transparent;
+        border: 2px solid $color-secondary-200;
+        width: 20px;
+        height: 20px;
+        border-radius: 5px;
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: 7px;
+        left: 5px;
+        width: 11px;
+        height: 7px;
+        border: 2px solid $color-secondary-500;
+        border-top: none;
+        border-right: none;
+        transform: rotate(-50deg);
+        display: none;
+      }
+    }
+
+  &:checked {
+    + .checkbox-custom-label {
+        color: $color-primary-300;
+
+        &:before {
+          background: $color-primary-300;
+          border: 2px solid $color-primary-300;
+        }
+
+        &:after {
+          display: block;
+        }
+      }
+  }
+
+  &:disabled {
+    + .checkbox-custom-label {
+        color: $color-secondary-600;
+        cursor: default;
+
+        &:after {
+          display: block;
+        }
+
+        &:before {
+          background: $color-secondary-200;
+          border: 2px solid $color-secondary-200;
+        }
+      }
+  }
+}
+
+.checkbox-custom-label {
+  cursor: pointer;
+  font-size: $font-size-base - 4;
+  line-height: $line-height-base + 2;
+  color: $color-secondary-200;
+  position: relative;
+  padding-left: 32px;
+}
+
+
+
+
+
+

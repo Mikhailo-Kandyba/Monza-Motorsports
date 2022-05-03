@@ -1,0 +1,47 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.form-control   {
+  border-radius: 15px;
+  border: 1px solid $color-secondary-300;
+
+  &::placeholder {
+    font-size: $font-size-base - 5;
+    color: $color-secondary-200;
+  }
+
+  &:focus {
+    border: 1px solid $color-secondary-200;
+  }
+}
+
+.invalid-feedback {
+  font-size: $font-size-base - 10;
+  line-height: $line-height-base + 2;
+  padding-left: 16px;
+}
+
+.form-control.is-valid {
+  border-color: $color-secondary-700;
+  background-image: url("../images/check-icon.svg");
+}
+
+.form-control.is-invalid {
+  border-color: $color-primary-300;
+  background-image: url("../images/close-icon.svg");
+}
+//
+//.was-validated {
+//  .form-control {
+//    &:valid {
+//      border-color: $color-secondary-700;
+//      background-image: url("../images/check-icon.svg");
+//    }
+//
+//    &:invalid {
+//      border-color: $color-primary-300;
+//      background-image: url("../images/close-icon.svg");
+//    }
+//  }
+//}
+
