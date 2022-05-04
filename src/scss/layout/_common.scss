@@ -74,3 +74,61 @@
   background: $color-secondary-500;
   padding: 15px 21px 35px;
 }
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 90px 0;
+  margin-bottom: 50px;
+}
+
+.banner-content {
+  padding-left: 10px;
+
+  > h1 {
+    margin-bottom: 32px;
+  }
+}
+
+.text {
+  font-size: $font-size-base - 5;
+  line-height: $line-height-base - 3;
+  color: $color-primary-200;
+}
+
+.row-content {
+  margin-bottom: 70px;
+}
+
+.current-wrap {
+  > h2 {
+    margin-bottom: 75px;
+  }
+}
+
+.filter-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  li {
+    width: 100%;
+  }
+}
+
+.btn-holder {
+  max-width: 290px;
+  width: 100%;
+}

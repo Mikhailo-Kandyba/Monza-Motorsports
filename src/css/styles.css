@@ -1,3 +1,12 @@
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1285px; } }
+
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -75,6 +84,14 @@ input {
 #wrapper {
   overflow: hidden;
   position: relative; }
+
+h1 {
+  color: #f8f8f8; }
+
+h2 {
+  color: #aeaeae;
+  text-transform: uppercase;
+  font-weight: 700; }
 
 @font-face {
   font-family: 'NotoSans-Bold';
@@ -446,6 +463,48 @@ h6 {
   border-color: #df4e3c;
   background-image: url("../images/close-icon.svg"); }
 
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0; }
+
+.navbar {
+  padding: 0;
+  min-width: 100%; }
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: initial;
+  max-width: 1000px;
+  width: 100%; }
+
+.navbar-nav {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%; }
+
+.nav-item {
+  margin-left: 27px; }
+
+.nav-link {
+  font-family: "NotoSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  color: #f8f8f8 !important;
+  padding: 5px 10px; }
+  .nav-link:hover {
+    color: #fff !important; }
+
+.navbar-icons {
+  display: flex;
+  align-items: center; }
+  .navbar-icons li {
+    margin-left: 30px; }
+  .navbar-icons i {
+    color: #f8f8f8; }
+
 .card {
   max-width: 295px;
   width: 100%;
@@ -499,3 +558,47 @@ h6 {
 .card-footer {
   background: #fff;
   padding: 15px 21px 35px; }
+
+.banner {
+  display: flex;
+  align-items: center;
+  background-image: url("../images/banner-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  padding: 90px 0;
+  margin-bottom: 50px; }
+
+.banner-content {
+  padding-left: 10px; }
+  .banner-content > h1 {
+    margin-bottom: 32px; }
+
+.text {
+  font-size: 15px;
+  line-height: 21px;
+  color: #f8f8f8; }
+
+.row-content {
+  margin-bottom: 70px; }
+
+.current-wrap > h2 {
+  margin-bottom: 75px; }
+
+.filter-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.filter-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; }
+  .filter-list li {
+    width: 100%; }
+
+.btn-holder {
+  max-width: 290px;
+  width: 100%; }

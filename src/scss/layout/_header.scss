@@ -1,0 +1,57 @@
+@import "../utils/variables";
+@import "../utils/mixin";
+
+.header {
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px 0;
+}
+
+.navbar {
+  padding: 0;
+  min-width: 100%;
+}
+
+.navbar-collapse {
+  display: flex;
+  justify-content: flex-end;
+  flex-grow: initial;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.navbar-nav {
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.nav-item {
+  margin-left: 27px;
+}
+
+.nav-link {
+  font-family: $font-family-noto-medium;
+  font-size: $font-size-base - 5;
+  line-height: $line-height-base - 3;
+  color: $color-primary-200 !important;
+  padding: 5px 10px;
+
+  &:hover {
+    color: $color-secondary-500 !important;
+  }
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+
+  li {
+    margin-left: 30px;
+  }
+  
+  i {
+    color: $color-primary-200;
+  }
+}

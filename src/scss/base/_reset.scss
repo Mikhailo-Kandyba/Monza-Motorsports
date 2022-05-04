@@ -88,4 +88,14 @@ input {
   position: relative;
 }
 
+h1 {
+  color: $color-primary-200;
+}
+
+h2 {
+  color: $color-secondary-100;
+  text-transform: uppercase;
+  font-weight: $font-weight-700;
+}
+
 
