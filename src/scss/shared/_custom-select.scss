@@ -126,3 +126,76 @@
   font-size: $font-size-base - 5;
   line-height: $line-height-base - 3;
 }
+
+//sorting-select
+
+.sorting-select {
+  border: none;
+  max-width: 190px;
+  padding: 10px;
+
+  &:after {
+    display: none;
+  }
+
+  .current {
+    font-size: $font-size-base - 8;
+    line-height: $line-height-base - 7;
+    color: $color-secondary-200;
+    background: $transparent;
+
+    &:hover {
+      color: $color-primary-300;
+    }
+  }
+
+  .list {
+    border: none;
+    border-radius: 15px;
+    background: $color-secondary-500;
+  }
+
+  .option {
+    font-size: $font-size-base - 8;
+    line-height: $line-height-base - 7;
+    padding: 5px 10px;
+
+    &.selected {
+      font-size: $font-size-base - 8;
+      line-height: $line-height-base - 7;
+      font-family: $base-font-family;
+      font-weight: $font-weight-400;
+    }
+  }
+}
+
+.sorting-area {
+  display: flex;
+  align-items: center;
+
+  label {
+    font-size: $font-size-base - 8;
+    line-height: $line-height-base - 7;
+    margin-right: 15px;
+  }
+}
+
+.icon-wrap {
+  display: flex;
+  align-items: center;
+}
+
+.icon-area {
+  &:first-child {
+    margin-top: -10px;
+  }
+
+  i {
+    font-size: $font-size-base - 12;
+    color: $color-secondary-200;
+  }
+
+  .ascending {
+    color: $color-primary-300;
+  }
+}

@@ -12,6 +12,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
@@ -120,6 +121,31 @@
                     <option value="6">Volkswagen</option>
                     <option value="7">Honda</option>
                 </select>
+            </div>
+        </div>
+        <div class="container">
+            <h3 class="text-center">Sorting select</h3>
+            <div class="mb-5">
+                <div class="sorting-area">
+                    <label for="sort">Sort by</label>
+                    <div class="icon-wrap">
+                        <div class="icon-area">
+                            <i class="fa fa-arrow-up ascending" aria-hidden="true"></i>
+                        </div>
+                        <div class="icon-area">
+                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                        </div>
+                    </div>
+                    <select id="sort" class="sorting-select">
+                        <option data-display="Publication date (descending)">Publication date (descending)</option>
+                        <option value="1">Price (ascending)</option>
+                        <option value="2">Price (descending)</option>
+                        <option value="3">Mileage (ascending)</option>
+                        <option value="4">Mileage (descending)</option>
+                        <option value="5">Performance (ascending)</option>
+                        <option value="6">Performance (descending)</option>
+                    </select>
+                </div>
             </div>
         </div>
 

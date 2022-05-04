@@ -375,6 +375,55 @@ h6 {
   font-size: 15px;
   line-height: 21px; }
 
+.sorting-select {
+  border: none;
+  max-width: 190px;
+  padding: 10px; }
+  .sorting-select:after {
+    display: none; }
+  .sorting-select .current {
+    font-size: 12px;
+    line-height: 17px;
+    color: #8d8d8d;
+    background: transparent; }
+    .sorting-select .current:hover {
+      color: #df4e3c; }
+  .sorting-select .list {
+    border: none;
+    border-radius: 15px;
+    background: #fff; }
+  .sorting-select .option {
+    font-size: 12px;
+    line-height: 17px;
+    padding: 5px 10px; }
+    .sorting-select .option.selected {
+      font-size: 12px;
+      line-height: 17px;
+      font-family: "NotoSans-Regular", sans-serif;
+      font-weight: 400; }
+
+.sorting-area {
+  display: flex;
+  align-items: center; }
+  .sorting-area label {
+    font-size: 12px;
+    line-height: 17px;
+    margin-right: 15px; }
+
+.icon-wrap {
+  display: flex;
+  align-items: center; }
+
+.icon-area:first-child {
+  margin-top: -10px; }
+
+.icon-area i {
+  font-size: 8px;
+  color: #8d8d8d; }
+
+.icon-area .ascending {
+  color: #df4e3c; }
+
 .form-control {
   border-radius: 15px;
   border: 1px solid #bdbdbd; }
