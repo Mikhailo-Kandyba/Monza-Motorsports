@@ -5,7 +5,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    max-width: 1285px; } }
+    max-width: 1265px; } }
 
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
@@ -421,7 +421,9 @@ h6 {
 
 .sorting-area {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  max-width: 258px;
+  width: 100%; }
   .sorting-area label {
     font-size: 12px;
     line-height: 17px;
@@ -570,10 +572,8 @@ h6 {
   padding: 90px 0;
   margin-bottom: 50px; }
 
-.banner-content {
-  padding-left: 10px; }
-  .banner-content > h1 {
-    margin-bottom: 32px; }
+.banner-content > h1 {
+  margin-bottom: 32px; }
 
 .text {
   font-size: 15px;
@@ -589,7 +589,8 @@ h6 {
 .filter-area {
   display: flex;
   align-items: center;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin-bottom: 10px; }
 
 .filter-list {
   display: flex;
@@ -602,3 +603,50 @@ h6 {
 .btn-holder {
   max-width: 290px;
   width: 100%; }
+
+.catalog {
+  margin-bottom: 120px; }
+
+.row-checked-wrap {
+  margin-bottom: 6px; }
+
+.badge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 15px 15px 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  line-height: 18px;
+  padding: 4px 20px;
+  font-weight: 400; }
+
+.application-wrap {
+  padding: 43px 0;
+  margin-bottom: 120px; }
+
+.application-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+
+.application-text {
+  color: #f8f8f8; }
+  .application-text h4 {
+    margin-bottom: 18px; }
+  .application-text p {
+    font-size: 15px;
+    line-height: 21px; }
+
+.application-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  .application-form .btn-holder {
+    max-width: 190px; }
+  .application-form form {
+    max-width: 505px;
+    width: 100%; }
+  .application-form input {
+    height: 55px;
+    background: transparent; }

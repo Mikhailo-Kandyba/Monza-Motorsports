@@ -172,6 +172,10 @@
 .sorting-area {
   display: flex;
   align-items: center;
+  max-width: 258px;
+  width: 100%;
+
+
 
   label {
     font-size: $font-size-base - 8;

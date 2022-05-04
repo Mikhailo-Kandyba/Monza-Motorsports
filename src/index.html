@@ -91,76 +91,603 @@
                         </div>
                     </section>
                 </div>
-                <section class="container current-wrap">
-                    <h2 class="text-center">CURRENT OFFERS</h2>
-                    <div class="filter-area">
-                        <ul class="filter-list">
-                            <li>
-                                <select>
-                                    <option data-display="Make">Make</option>
-                                    <option value="1">Honda</option>
-                                    <option value="2">Kia</option>
-                                    <option value="3">Toyota</option>
-                                    <option value="4">Volkswagen</option>
-                                    <option value="5">Toyota</option>
-                                    <option value="6">Volkswagen</option>
-                                    <option value="7">Honda</option>
-                                </select>
-                            </li>
-                            <li>
-                                <select>
-                                    <option data-display="Make">Make</option>
-                                    <option value="1">Honda</option>
-                                    <option value="2">Kia</option>
-                                    <option value="3">Toyota</option>
-                                    <option value="4">Volkswagen</option>
-                                    <option value="5">Toyota</option>
-                                    <option value="6">Volkswagen</option>
-                                    <option value="7">Honda</option>
-                                </select>
-                            </li>
-                            <li>
-                                <select>
-                                    <option data-display="Make">Make</option>
-                                    <option value="1">Honda</option>
-                                    <option value="2">Kia</option>
-                                    <option value="3">Toyota</option>
-                                    <option value="4">Volkswagen</option>
-                                    <option value="5">Toyota</option>
-                                    <option value="6">Volkswagen</option>
-                                    <option value="7">Honda</option>
-                                </select>
-                            </li>
-                            <li>
-                                <select>
-                                    <option data-display="Make">Make</option>
-                                    <option value="1">Honda</option>
-                                    <option value="2">Kia</option>
-                                    <option value="3">Toyota</option>
-                                    <option value="4">Volkswagen</option>
-                                    <option value="5">Toyota</option>
-                                    <option value="6">Volkswagen</option>
-                                    <option value="7">Honda</option>
-                                </select>
-                            </li>
-                            <li>
-                                <select>
-                                    <option data-display="Make">Make</option>
-                                    <option value="1">Honda</option>
-                                    <option value="2">Kia</option>
-                                    <option value="3">Toyota</option>
-                                    <option value="4">Volkswagen</option>
-                                    <option value="5">Toyota</option>
-                                    <option value="6">Volkswagen</option>
-                                    <option value="7">Honda</option>
-                                </select>
-                            </li>
-                        </ul>
-                        <div class="btn-holder">
-                            <button class="btn btn-danger">40 cars</button>
+                <section class="container">
+                    <div class="current-wrap">
+                        <h2 class="text-center">CURRENT OFFERS</h2>
+                        <div class="filter-area">
+                            <ul class="filter-list">
+                                <li>
+                                    <select>
+                                        <option data-display="Year">Year</option>
+                                        <option value="1">2015</option>
+                                        <option value="2">2016</option>
+                                        <option value="3">2017</option>
+                                        <option value="4">2018</option>
+                                        <option value="5">2019</option>
+                                        <option value="6">2020</option>
+                                        <option value="7">2021</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option data-display="Make">Make</option>
+                                        <option value="1">Honda</option>
+                                        <option value="2">Kia</option>
+                                        <option value="3">Toyota</option>
+                                        <option value="4">Volkswagen</option>
+                                        <option value="5">Toyota</option>
+                                        <option value="6">Volkswagen</option>
+                                        <option value="7">Honda</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option data-display="Model">Model</option>
+                                        <option value="1">Honda</option>
+                                        <option value="2">Kia</option>
+                                        <option value="3">Toyota</option>
+                                        <option value="4">Volkswagen</option>
+                                        <option value="5">Toyota</option>
+                                        <option value="6">Volkswagen</option>
+                                        <option value="7">Honda</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option data-display="Trim">Trim</option>
+                                        <option value="1">Honda</option>
+                                        <option value="2">Kia</option>
+                                        <option value="3">Toyota</option>
+                                        <option value="4">Volkswagen</option>
+                                        <option value="5">Toyota</option>
+                                        <option value="6">Volkswagen</option>
+                                        <option value="7">Honda</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <select>
+                                        <option data-display="Mileage">Mileage</option>
+                                        <option value="1">Honda</option>
+                                        <option value="2">Kia</option>
+                                        <option value="3">Toyota</option>
+                                        <option value="4">Volkswagen</option>
+                                        <option value="5">Toyota</option>
+                                        <option value="6">Volkswagen</option>
+                                        <option value="7">Honda</option>
+                                    </select>
+                                </li>
+                            </ul>
+                            <div class="btn-holder">
+                                <button class="btn btn-danger">40 cars</button>
+                            </div>
+                        </div>
+                        <div class="row row-checked-wrap">
+                            <div class="col d-flex align-items-center">
+                                <div>
+                                    <input id="checkbox-1" class="checkbox-custom" name="checkbox-1" type="checkbox">
+                                    <label for="checkbox-1" class="checkbox-custom-label">Instantly available vehicles</label>
+                                </div>
+                            </div>
+                            <div class="col d-flex justify-content-end align-items-center">
+                                <div class="sorting-area">
+                                    <label for="sort">Sort by</label>
+                                    <div class="icon-wrap">
+                                        <div class="icon-area">
+                                            <i class="fa fa-arrow-up ascending" aria-hidden="true"></i>
+                                        </div>
+                                        <div class="icon-area">
+                                            <i class="fa fa-arrow-down" aria-hidden="true"></i>
+                                        </div>
+                                    </div>
+                                    <select id="sort" class="sorting-select">
+                                        <option data-display="Publication date (descending)">Publication date (descending)</option>
+                                        <option value="1">Price (ascending)</option>
+                                        <option value="2">Price (descending)</option>
+                                        <option value="3">Mileage (ascending)</option>
+                                        <option value="4">Mileage (descending)</option>
+                                        <option value="5">Performance (ascending)</option>
+                                        <option value="6">Performance (descending)</option>
+                                    </select>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
+                <section class="container">
+                    <div class="catalog">
+                        <div class="row row-cols-1 row-cols-md-4 g-3">
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-1.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2019</small>
+                                            <a href="#" class="px-2 card-link">Volkswagen Tiguan</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-2.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2014</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander XLE</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">69,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$27,875</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-3.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2017</small>
+                                            <a href="#" class="px-2 card-link">Lexus RX 350 LUXURY</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$38,775</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-4.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander LE A</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">104,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$23,728</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-5.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2017</small>
+                                            <a href="#" class="px-2 card-link">Hyundai Elantra</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">95,000  km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$11,788</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-6.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Mercedes-Benz GLE-Cl</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">59,800 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$38,878</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-7.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2015</small>
+                                            <a href="#" class="px-2 card-link">Toyota Venza AWD XLE</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">99,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$18,620</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-8.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Lexus RX 350 F-SPORT</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-1.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2019</small>
+                                            <a href="#" class="px-2 card-link">Volkswagen Tiguan</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-1.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2019</small>
+                                            <a href="#" class="px-2 card-link">Volkswagen Tiguan</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-2.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2014</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander XLE</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">69,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$27,875</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-3.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2017</small>
+                                            <a href="#" class="px-2 card-link">Lexus RX 350 LUXURY</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$38,775</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-4.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander LE A</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">104,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$23,728</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-1.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2019</small>
+                                            <a href="#" class="px-2 card-link">Volkswagen Tiguan</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-2.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2014</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander XLE</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">69,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$27,875</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-3.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2017</small>
+                                            <a href="#" class="px-2 card-link">Lexus RX 350 LUXURY</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">39,850 km</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$38,775</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-4.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Toyota Highlander LE A</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">104,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$23,728</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-5.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2017</small>
+                                            <a href="#" class="px-2 card-link">Hyundai Elantra</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">95,000  km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$11,788</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-6.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Mercedes-Benz GLE-Cl</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">59,800 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$38,878</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area position-relative">
+                                        <img src="./images/card-img-7.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                        <span class="badge bg-dark">New</span>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2015</small>
+                                            <a href="#" class="px-2 card-link">Toyota Venza AWD XLE</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">99,000 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Gas</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$18,620</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-8.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2016</small>
+                                            <a href="#" class="px-2 card-link">Lexus RX 350 F-SPORT</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="card">
+                                    <div class="img-area">
+                                        <img src="./images/card-img-1.png" width="295" height="200" class="card-img-top" alt="card-img">
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="card-text d-flex align-items-center">
+                                            <small class="text-muted">2019</small>
+                                            <a href="#" class="px-2 card-link">Volkswagen Tiguan</a>
+                                        </p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item text-muted">19,855 km</li>
+                                        <li class="list-group-item text-muted">Automatic</li>
+                                        <li class="list-group-item text-muted">Diesel</li>
+                                    </ul>
+                                    <div class="card-footer">
+                                        <p class="card-price">$34,888</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <div class="application-wrap bg-dark">
+                    <section class="container">
+                        <div class="row application-area">
+                            <div class="col col-md-4 application-text">
+                                <h4>Haven't found a suitable vehicle?</h4>
+                                <p>
+                                    Sign up for our newsletter and be the first to know when we publish new vehicle offers.
+                                </p>
+                            </div>
+                            <div class="col col-md-7 application-form">
+                                <form action="#">
+                                    <input type="email" class="form-control" placeholder="Enter your email">
+                                </form>
+                                <div class="btn-holder">
+                                    <button class="btn btn-light btn-lg">Subscribe now</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
             </main>
             <footer>
             </footer>

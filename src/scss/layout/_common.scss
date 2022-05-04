@@ -88,8 +88,6 @@
 }
 
 .banner-content {
-  padding-left: 10px;
-
   > h1 {
     margin-bottom: 32px;
   }
@@ -115,6 +113,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 10px;
 }
 
 .filter-list {
@@ -131,4 +130,68 @@
 .btn-holder {
   max-width: 290px;
   width: 100%;
+}
+
+.catalog {
+  margin-bottom: 120px;
+}
+
+.row-checked-wrap {
+  margin-bottom: 6px;
+}
+
+.badge {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  border-radius: 0 15px 15px 0;
+  font-family: $poppins-font;
+  font-size: $font-size-base - 8;
+  line-height: $line-height-base - 6;
+  padding: 4px 20px;
+  font-weight: $font-weight-400;
+}
+
+.application-wrap {
+  padding: 43px 0;
+  margin-bottom: 120px;
+}
+
+.application-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.application-text {
+  color: $color-primary-200;
+
+  h4 {
+    margin-bottom: 18px;
+  }
+
+  p {
+    font-size: $font-size-base - 5;
+    line-height: $line-height-base - 3;
+  }
+}
+
+.application-form {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .btn-holder {
+    max-width: 190px;
+  }
+
+  form {
+    max-width: 505px;
+    width: 100%;
+  }
+
+  input {
+    height: 55px;
+    background: $transparent;
+  }
 }
