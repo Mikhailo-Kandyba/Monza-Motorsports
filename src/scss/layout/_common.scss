@@ -2,7 +2,6 @@
 @import "../utils/mixin";
 
 .card {
-  max-width: 295px;
   width: 100%;
   box-shadow: 0 0 18px rgba(68, 68, 68, 0.09);
   border-radius: 0;
@@ -12,12 +11,20 @@
 
 .card-body {
   padding: 21px 21px 2px;
+
+  @include breakpoint($desktop-lg) {
+    padding: 21px 15px 2px;
+  }
 }
 
 .card-text {
-  font-family: $poppins-font;
   font-size: $font-size-base + 2;
   line-height: $line-height-base + 5;
+
+  > span {
+    font-family: $poppins-font;
+    font-weight: $font-weight-400;
+  }
 }
 
 .card-link {
@@ -38,6 +45,10 @@
   display: flex;
   flex-direction: row;
   padding: 10px 13px;
+
+  @include breakpoint($desktop-lg) {
+    padding: 10px 7px;
+  }
 }
 
 .card {
@@ -77,6 +88,10 @@
 .card-footer {
   background: $color-secondary-500;
   padding: 15px 21px 35px;
+
+  @include breakpoint($desktop-lg) {
+    padding: 15px 15px 35px;
+  }
 }
 
 .banner {
@@ -89,25 +104,61 @@
   min-height: 100vh;
   padding: 90px 0;
   margin-bottom: 100px;
+
+  @include breakpoint($tablet) {
+    min-height: 500px;
+    padding: 60px 0;
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint($mobile) {
+    padding: 55px 0 10px;
+    min-height: 420px;
+    margin-bottom: 25px;
+  }
 }
 
 .banner-content {
   > h1 {
     margin-bottom: 32px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 15px;
+    }
   }
 }
 
 .text {
   color: $color-primary-200;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 4;
+  }
 }
 
 .row-content {
   margin-bottom: 70px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 40px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 20px;
+  }
 }
 
 .current-wrap {
   > h2 {
     margin-bottom: 75px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 25px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
+    }
   }
 }
 
@@ -116,26 +167,85 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 17px;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+  }
+
+  @include breakpoint($mobile) {
+    display: none;
+    flex-direction: column;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 10;
+    margin-bottom: 0;
+    padding: 20px 0;
+    border-radius: 15px;
+  }
+
+  &.show-filter {
+    @include breakpoint($mobile) {
+      display: flex;
+    }
+  }
 }
 
 .filter-list {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
   width: 100%;
+  margin: 0 -10px;
+
+  @include breakpoint($tablet) {
+    margin: 0 -5px;
+    justify-content: flex-start;
+    margin-bottom: 10px;
+  }
 
   li {
-    width: 100%;
+    padding: 0 10px;
+    width: 20%;
+
+    @include breakpoint($tablet) {
+      padding: 0 5px;
+      margin-bottom: 5px;
+    }
+
+    @include breakpoint($mobile) {
+      width: 50%;
+    }
   }
 }
 
 .btn-holder {
   max-width: 290px;
   width: 100%;
+  margin-left: 20px;
+
+  @include breakpoint($desktop-lg) {
+    max-width: 250px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 230px;
+  }
+
+  @include breakpoint($mobile) {
+    max-width: 100%;
+    margin-left: 0;
+  }
 }
 
 .catalog {
   margin-bottom: 120px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .row-checked-wrap {
@@ -157,6 +267,10 @@
 .application-wrap {
   padding: 43px 0;
   margin-bottom: 120px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .application-area {
@@ -169,6 +283,10 @@
   color: $color-primary-200;
   padding-right: 30px;
 
+  @include breakpoint($tablet) {
+    padding-right: 0;
+  }
+
   h4 {
     margin-bottom: 18px;
   }
@@ -179,13 +297,26 @@
   align-items: center;
   justify-content: space-between;
 
+  @include breakpoint($tablet) {
+    flex-direction: column;
+  }
+
   .btn-holder {
     max-width: 190px;
+
+    @include breakpoint($tablet) {
+      max-width: 100%;
+      margin-left: 0;
+    }
   }
 
   form {
     max-width: 505px;
     width: 100%;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 10px;
+    }
   }
 
   input {
@@ -196,11 +327,19 @@
 
 .faq {
   margin-bottom: 200px;
+
+  @include breakpoint($tablet) {
+    margin-bottom: 80px;
+  }
 }
 
 .faq-content {
   > h2 {
     margin-bottom: 57px;
+
+    @include breakpoint($tablet) {
+      margin-bottom: 27px;
+    }
   }
 }
 
@@ -213,3 +352,9 @@
     display: flex;
   }
 }
+
+
+
+
+
+

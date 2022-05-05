@@ -2,6 +2,7 @@
 @import "../utils/mixin";
 
 .header {
+  position: absolute;
   top: 0;
   right: 0;
   left: 0;
@@ -14,6 +15,14 @@
 
 .logo {
   display: block;
+
+  @include breakpoint($desktop-lg) {
+    max-width: 185px;
+  }
+
+  @include breakpoint($tablet) {
+    max-width: 185px;
+  }
 
   img {
     display: flex;
@@ -31,6 +40,14 @@
   flex-grow: initial;
   max-width: 1000px;
   width: 100%;
+
+  @include breakpoint($tablet) {
+    flex-direction: column;
+    justify-content: center;
+    background: $color-secondary-200;
+    border-radius: 15px;
+    padding: 10px;
+  }
 }
 
 .navbar-nav {
@@ -38,10 +55,22 @@
   flex-wrap: wrap;
   width: 100%;
 
+  @include breakpoint($tablet) {
+    margin-bottom: 10px;
+    max-width: 240px;
+  }
+
   .active {
     &:after {
       width: 100%;
     }
+  }
+}
+
+.nav-item {
+  @include breakpoint($tablet) {
+    margin: 0 !important;
+    text-align: center;
   }
 }
 
@@ -81,10 +110,6 @@
   display: flex;
   align-items: center;
 
-  i {
-    font-size: $font-size-base + 6;
-  }
-
   a {
     display: block;
 
@@ -97,5 +122,47 @@
   
   i {
     color: $color-primary-200;
+    font-size: $font-size-base + 6;
+  }
+
+  li {
+    @include breakpoint($tablet) {
+      margin: 0 10px !important;
+    }
+  }
+}
+
+.navbar-light {
+  .navbar-toggler {
+    border: none;
+  }
+
+  i {
+    font-size: $font-size-base + 5;
+    color: $color-primary-200;
+  }
+
+  .icon {
+    font-size: $font-size-base + 12;
+
+    &:first-child {
+      display: block;
+    }
+
+    &:last-child {
+      display: none;
+    }
+  }
+}
+
+.navbar-toggler[aria-expanded="true"] {
+  .icon {
+    &:first-child {
+      display: none;
+    }
+
+    &:last-child {
+      display: block;
+    }
   }
 }

@@ -9,6 +9,12 @@
   width: 100%;
   color: $color-primary-200;
 
+  @include breakpoint($mobile) {
+    padding: 5px;
+    font-size: $font-size-base - 1;
+    letter-spacing: 1px;
+  }
+
   &:hover {
     background: $transparent;
   }
@@ -93,6 +99,12 @@
   font-size: $font-size-base + 5;
   line-height: $line-height-base + 6;
   padding: 12px;
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base + 2;
+    line-height: $line-height-base - 1;
+    padding: 8px;
+  }
 }
 
 .btn-lg {
@@ -101,6 +113,15 @@
 
 .bg-dark {
   background-color: $color-primary-100 !important;
+}
+
+.btn-filter {
+  display: none;
+
+  @include breakpoint($mobile) {
+    display: block;
+    margin-bottom: 10px;
+  }
 }
 
 

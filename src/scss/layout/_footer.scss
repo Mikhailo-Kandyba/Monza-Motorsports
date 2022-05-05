@@ -4,3 +4,15 @@
 .footer {
   padding: 40px 0;
 }
+
+.footer-navbar {
+  @include breakpoint($tablet) {
+    max-width: 100%;
+  }
+}
+
+.footer-nav-item {
+  @include breakpoint($tablet) {
+    margin: 0 10px !important;
+  }
+}

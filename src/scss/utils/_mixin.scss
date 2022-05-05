@@ -1,6 +1,7 @@
-$desktop: 1500px;
-$tablet: 1023px;
-$mobile: 767px;
+$desktop-lg: 1400px - 1;
+$desktop: 1200px - 1;
+$tablet: 1024px - 1;
+$mobile: 768px - 1;
 
 @mixin breakpoint($rule){
   @media only screen and (max-width: #{$rule}){
