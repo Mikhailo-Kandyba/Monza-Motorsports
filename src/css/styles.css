@@ -178,6 +178,9 @@ h6 {
 .text-muted {
   color: #8d8d8d; }
 
+.logo-md {
+  max-width: 187px; }
+
 .btn {
   font-size: 15px;
   line-height: 21px;
@@ -507,6 +510,11 @@ h6 {
   left: 0;
   padding: 20px 0; }
 
+.logo {
+  display: block; }
+  .logo img {
+    display: flex; }
+
 .navbar {
   padding: 0;
   min-width: 100%; }
@@ -523,9 +531,6 @@ h6 {
   flex-wrap: wrap;
   width: 100%; }
 
-.nav-item {
-  margin-left: 27px; }
-
 .nav-link {
   font-family: "NotoSans-Medium", sans-serif;
   font-size: 15px;
@@ -538,8 +543,8 @@ h6 {
 .navbar-icons {
   display: flex;
   align-items: center; }
-  .navbar-icons li {
-    margin-left: 30px; }
+  .navbar-icons a {
+    display: block; }
   .navbar-icons i {
     color: #f8f8f8; }
 
@@ -687,5 +692,10 @@ h6 {
     height: 55px;
     background: transparent; }
 
-.faq > h2 {
-  margin-bottom: 63px; }
+.faq {
+  margin-bottom: 200px; }
+  .faq > h2 {
+    margin-bottom: 63px; }
+
+.footer {
+  padding: 40px 0; }
