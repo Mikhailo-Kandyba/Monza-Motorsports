@@ -4,7 +4,7 @@
 // Style the dropdown
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: $color-secondary-500;
+  background-color: $transparent;
   border-radius: 15px;
   border: 1px solid $color-secondary-400;
   cursor: pointer;
@@ -107,6 +107,7 @@
 .nice-select.open {
   border-bottom: none;
   border-radius: 15px 15px 0 0;
+  background-color: $color-secondary-500;
 }
 
 // Use display instead of opacity for IE <= 10
@@ -172,10 +173,7 @@
 .sorting-area {
   display: flex;
   align-items: center;
-  max-width: 258px;
-  width: 100%;
-
-
+  min-width: 260px;
 
   label {
     font-size: $font-size-base - 8;

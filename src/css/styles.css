@@ -37,7 +37,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   height: 100%;
-  background: #fff;
+  background: #f8f8f8;
   font-size: 20px;
   line-height: 24px;
   font-family: "NotoSans-Regular", sans-serif;
@@ -304,7 +304,7 @@ h6 {
 
 .nice-select {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-color: #fff;
+  background-color: transparent;
   border-radius: 15px;
   border: 1px solid #c4c4c4;
   cursor: pointer;
@@ -380,7 +380,8 @@ h6 {
 
 .nice-select.open {
   border-bottom: none;
-  border-radius: 15px 15px 0 0; }
+  border-radius: 15px 15px 0 0;
+  background-color: #fff; }
 
 .no-csspointerevents .nice-select .list {
   display: none; }
@@ -422,8 +423,7 @@ h6 {
 .sorting-area {
   display: flex;
   align-items: center;
-  max-width: 258px;
-  width: 100%; }
+  min-width: 260px; }
   .sorting-area label {
     font-size: 12px;
     line-height: 17px;
@@ -464,6 +464,42 @@ h6 {
 .form-control.is-invalid {
   border-color: #df4e3c;
   background-image: url("../images/close-icon.svg"); }
+
+.accordion {
+  max-width: 820px;
+  margin: 0 auto; }
+
+.accordion-button {
+  font-family: "NotoSans-Medium", sans-serif;
+  font-size: 15px;
+  line-height: 21px;
+  background-color: #f8f8f8;
+  padding: 17px 23px 20px;
+  border-bottom: 1px solid #c4c4c4; }
+  .accordion-button:not(.collapsed) {
+    box-shadow: none;
+    background-color: #fff;
+    color: #df4e3c;
+    padding: 26px 37px 21px;
+    border: none; }
+    .accordion-button:not(.collapsed):after {
+      background-image: url("../images/minus.svg"); }
+  .accordion-button:after {
+    background-image: url("../images/plus.svg"); }
+  .accordion-button:focus {
+    border-color: #c4c4c4; }
+
+.accordion-item {
+  border: none; }
+  .accordion-item .show {
+    background: #fff; }
+
+.accordion-body {
+  font-size: 13px;
+  line-height: 21px;
+  padding: 0 50px 10px 40px; }
+  .accordion-body p {
+    margin-bottom: 6px; }
 
 .header {
   top: 0;
@@ -650,3 +686,6 @@ h6 {
   .application-form input {
     height: 55px;
     background: transparent; }
+
+.faq > h2 {
+  margin-bottom: 63px; }
