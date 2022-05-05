@@ -75,10 +75,11 @@
 
   .option {
     cursor: pointer;
-    font-size: $font-size-base - 7;
+    font-size: $font-size-base - 2;
+    line-height: $line-height-base - 9;
     list-style: none;
     outline: none;
-    padding: 3px 17px;
+    padding: 7px 17px;
     text-align: left;
     transition: all 0.2s;
 
@@ -89,7 +90,8 @@
     &.selected {
       font-family: $font-family-noto-semi;
       font-weight: $font-weight-600;
-      font-size: $font-size-base - 5;
+      font-size: $font-size-base;
+      line-height: $line-height-base - 9;
 
       &:hover {
         color: $color-primary-100;
@@ -123,25 +125,21 @@
   }
 }
 
-.current {
-  font-size: $font-size-base - 5;
-  line-height: $line-height-base - 3;
-}
-
 //sorting-select
 
 .sorting-select {
   border: none;
   max-width: 190px;
   padding: 10px;
+  height: 32px;
 
   &:after {
     display: none;
   }
 
   .current {
-    font-size: $font-size-base - 8;
-    line-height: $line-height-base - 7;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
     color: $color-secondary-200;
     background: $transparent;
 
@@ -154,19 +152,24 @@
     border: none;
     border-radius: 15px;
     background: $color-secondary-500;
+    padding: 7px 0;
   }
 
   .option {
-    font-size: $font-size-base - 8;
-    line-height: $line-height-base - 7;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
     padding: 5px 10px;
 
     &.selected {
-      font-size: $font-size-base - 8;
-      line-height: $line-height-base - 7;
+      font-size: $font-size-base - 3;
+      line-height: $line-height-base - 4;
       font-family: $base-font-family;
       font-weight: $font-weight-400;
     }
+  }
+
+  &.open {
+    background-color: $transparent;
   }
 }
 
@@ -176,9 +179,9 @@
   min-width: 260px;
 
   label {
-    font-size: $font-size-base - 8;
-    line-height: $line-height-base - 7;
-    margin-right: 15px;
+    font-size: $font-size-base - 3;
+    line-height: $line-height-base - 4;
+    margin-right: 17px;
   }
 }
 
@@ -193,7 +196,7 @@
   }
 
   i {
-    font-size: $font-size-base - 12;
+    font-size: $font-size-base - 8;
     color: $color-secondary-200;
   }
 

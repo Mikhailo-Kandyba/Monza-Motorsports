@@ -10,7 +10,7 @@
       &:before {
         content: '';
         position: absolute;
-        top: 2px;
+        top: -2px;
         left: 0;
         background: $transparent;
         border: 2px solid $color-secondary-200;
@@ -22,8 +22,8 @@
       &:after {
         content: '';
         position: absolute;
-        top: 7px;
-        left: 5px;
+        top: 2px;
+        left: 4px;
         width: 11px;
         height: 7px;
         border: 2px solid $color-secondary-500;
@@ -68,8 +68,8 @@
 
 .checkbox-custom-label {
   cursor: pointer;
-  font-size: $font-size-base - 4;
-  line-height: $line-height-base + 2;
+  font-size: $font-size-base - 2;
+  line-height: $line-height-base - 4;
   color: $color-secondary-200;
   position: relative;
   padding-left: 32px;

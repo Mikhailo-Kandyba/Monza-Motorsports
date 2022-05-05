@@ -11,19 +11,22 @@
 }
 
 .card-body {
-  padding: 21px 21px 5px;
+  padding: 21px 21px 2px;
 }
 
 .card-text {
   font-family: $poppins-font;
-  font-size: $font-size-base - 3;
-  line-height: $line-height-base + 2;
+  font-size: $font-size-base + 2;
+  line-height: $line-height-base + 5;
 }
 
 .card-link {
   font-family: $base-font-family;
-  line-height: $line-height-base;
+  line-height: $line-height-base + 2;
   color: $color-primary-100;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 
   &:hover {
     text-decoration: underline;
@@ -51,8 +54,8 @@
 
 .list-group-item {
   font-family: $font-family-noto-light;
-  font-size: $font-size-base - 6;
-  line-height: $line-height-base - 5;
+  font-size: $font-size-base - 1;
+  line-height: $line-height-base - 1;
   padding: 0 8px;
 
   &:first-child {
@@ -67,7 +70,8 @@
 .card-price {
   font-family: $font-family-noto-medium;
   font-weight: $font-weight-500;
-  line-height: $line-height-base + 3;
+  font-size: $font-size-base + 5;
+  line-height: $line-height-base + 7;
 }
 
 .card-footer {
@@ -84,7 +88,7 @@
   background-position: center;
   min-height: 100vh;
   padding: 90px 0;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .banner-content {
@@ -94,8 +98,6 @@
 }
 
 .text {
-  font-size: $font-size-base - 5;
-  line-height: $line-height-base - 3;
   color: $color-primary-200;
 }
 
@@ -113,7 +115,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px;
+  margin-bottom: 17px;
 }
 
 .filter-list {
@@ -137,7 +139,7 @@
 }
 
 .row-checked-wrap {
-  margin-bottom: 6px;
+  margin-bottom: 15px;
 }
 
 .badge {
@@ -146,8 +148,8 @@
   bottom: 0;
   border-radius: 0 15px 15px 0;
   font-family: $poppins-font;
-  font-size: $font-size-base - 8;
-  line-height: $line-height-base - 6;
+  font-size: $font-size-base - 3;
+  line-height: $line-height-base - 4;
   padding: 4px 20px;
   font-weight: $font-weight-400;
 }
@@ -165,14 +167,10 @@
 
 .application-text {
   color: $color-primary-200;
+  padding-right: 30px;
 
   h4 {
     margin-bottom: 18px;
-  }
-
-  p {
-    font-size: $font-size-base - 5;
-    line-height: $line-height-base - 3;
   }
 }
 
@@ -198,8 +196,20 @@
 
 .faq {
   margin-bottom: 200px;
+}
 
+.faq-content {
   > h2 {
-    margin-bottom: 63px;
+    margin-bottom: 57px;
+  }
+}
+
+.card-img-top {
+  border-radius: 0;
+}
+
+.img-area {
+  img {
+    display: flex;
   }
 }

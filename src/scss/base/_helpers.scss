@@ -6,9 +6,21 @@
 }
 
 .text-muted {
-  color: $color-secondary-200;
+  color: $color-secondary-200 !important;
 }
 
 .logo-md {
   max-width: 187px;
+}
+
+.padding {
+  padding: 0 28px;
+}
+
+.text-white {
+  color: $color-primary-200;
+}
+
+.text-light {
+  color: $color-secondary-100 !important;
 }

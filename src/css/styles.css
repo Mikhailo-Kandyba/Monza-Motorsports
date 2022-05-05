@@ -1,12 +1,3 @@
-@media (min-width: 1400px) {
-  .container,
-  .container-lg,
-  .container-md,
-  .container-sm,
-  .container-xl,
-  .container-xxl {
-    max-width: 1265px; } }
-
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -38,8 +29,8 @@ footer, header, hgroup, menu, nav, section {
 body {
   height: 100%;
   background: #f8f8f8;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 15px;
+  line-height: 21px;
   font-family: "NotoSans-Regular", sans-serif;
   font-weight: 400;
   min-width: 320px;
@@ -85,13 +76,8 @@ input {
   overflow: hidden;
   position: relative; }
 
-h1 {
-  color: #f8f8f8; }
-
 h2 {
-  color: #aeaeae;
-  text-transform: uppercase;
-  font-weight: 700; }
+  text-transform: uppercase; }
 
 @font-face {
   font-family: 'NotoSans-Bold';
@@ -131,6 +117,8 @@ tr {
 
 th,
 td {
+  font-size: 17px;
+  line-height: 23px;
   padding: 30px 0;
   vertical-align: middle; }
   th:nth-child(1),
@@ -146,7 +134,8 @@ h1 {
 h2 {
   font-family: "Poppins", sans-serif;
   font-size: 50px;
-  line-height: 75px; }
+  line-height: 75px;
+  font-weight: 700; }
 
 h3 {
   font-family: "NotoSans-SemiBold", sans-serif;
@@ -157,7 +146,7 @@ h3 {
 h4 {
   font-family: "NotoSans-SemiBold", sans-serif;
   font-size: 25px;
-  line-height: 35px;
+  line-height: 34px;
   font-weight: 600; }
 
 h5 {
@@ -176,16 +165,25 @@ h6 {
   width: 100%; }
 
 .text-muted {
-  color: #8d8d8d; }
+  color: #8d8d8d !important; }
 
 .logo-md {
   max-width: 187px; }
+
+.padding {
+  padding: 0 28px; }
+
+.text-white {
+  color: #f8f8f8; }
+
+.text-light {
+  color: #aeaeae !important; }
 
 .btn {
   font-size: 15px;
   line-height: 21px;
   border-radius: 15px;
-  padding: 10px;
+  padding: 11px;
   width: 100%;
   color: #f8f8f8; }
   .btn:hover {
@@ -262,7 +260,7 @@ h6 {
   .checkbox-custom + .checkbox-custom-label:before {
     content: '';
     position: absolute;
-    top: 2px;
+    top: -2px;
     left: 0;
     background: transparent;
     border: 2px solid #8d8d8d;
@@ -272,8 +270,8 @@ h6 {
   .checkbox-custom + .checkbox-custom-label:after {
     content: '';
     position: absolute;
-    top: 7px;
-    left: 5px;
+    top: 2px;
+    left: 4px;
     width: 11px;
     height: 7px;
     border: 2px solid #fff;
@@ -299,8 +297,8 @@ h6 {
 
 .checkbox-custom-label {
   cursor: pointer;
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 13px;
+  line-height: 17px;
   color: #8d8d8d;
   position: relative;
   padding-left: 32px; }
@@ -363,9 +361,10 @@ h6 {
   .nice-select .option {
     cursor: pointer;
     font-size: 13px;
+    line-height: 12px;
     list-style: none;
     outline: none;
-    padding: 3px 17px;
+    padding: 7px 17px;
     text-align: left;
     transition: all 0.2s; }
     .nice-select .option:hover {
@@ -373,7 +372,8 @@ h6 {
     .nice-select .option.selected {
       font-family: "NotoSans-SemiBold", sans-serif;
       font-weight: 600;
-      font-size: 15px; }
+      font-size: 15px;
+      line-height: 12px; }
       .nice-select .option.selected:hover {
         color: #000;
         cursor: default; }
@@ -392,14 +392,11 @@ h6 {
 .no-csspointerevents .nice-select.open .list {
   display: block; }
 
-.current {
-  font-size: 15px;
-  line-height: 21px; }
-
 .sorting-select {
   border: none;
   max-width: 190px;
-  padding: 10px; }
+  padding: 10px;
+  height: 32px; }
   .sorting-select:after {
     display: none; }
   .sorting-select .current {
@@ -412,7 +409,8 @@ h6 {
   .sorting-select .list {
     border: none;
     border-radius: 15px;
-    background: #fff; }
+    background: #fff;
+    padding: 7px 0; }
   .sorting-select .option {
     font-size: 12px;
     line-height: 17px;
@@ -422,6 +420,8 @@ h6 {
       line-height: 17px;
       font-family: "NotoSans-Regular", sans-serif;
       font-weight: 400; }
+  .sorting-select.open {
+    background-color: transparent; }
 
 .sorting-area {
   display: flex;
@@ -430,7 +430,7 @@ h6 {
   .sorting-area label {
     font-size: 12px;
     line-height: 17px;
-    margin-right: 15px; }
+    margin-right: 17px; }
 
 .icon-wrap {
   display: flex;
@@ -440,7 +440,7 @@ h6 {
   margin-top: -10px; }
 
 .icon-area i {
-  font-size: 8px;
+  font-size: 7px;
   color: #8d8d8d; }
 
 .icon-area .ascending {
@@ -448,9 +448,10 @@ h6 {
 
 .form-control {
   border-radius: 15px;
-  border: 1px solid #bdbdbd; }
+  border: 1px solid #bdbdbd;
+  line-height: 15px;
+  height: 48px; }
   .form-control::placeholder {
-    font-size: 15px;
     color: #8d8d8d; }
   .form-control:focus {
     border: 1px solid #8d8d8d; }
@@ -477,18 +478,21 @@ h6 {
   font-size: 15px;
   line-height: 21px;
   background-color: #f8f8f8;
-  padding: 17px 23px 20px;
+  padding: 22px 33px 22px 25px;
   border-bottom: 1px solid #c4c4c4; }
   .accordion-button:not(.collapsed) {
     box-shadow: none;
     background-color: #fff;
     color: #df4e3c;
-    padding: 26px 37px 21px;
+    padding: 26px 47px 23px 40px;
     border: none; }
     .accordion-button:not(.collapsed):after {
       background-image: url("../images/minus.svg"); }
   .accordion-button:after {
-    background-image: url("../images/plus.svg"); }
+    background-image: url("../images/plus.svg");
+    background-size: 12px;
+    width: 13px;
+    height: 13px; }
   .accordion-button:focus {
     border-color: #c4c4c4; }
 
@@ -499,8 +503,9 @@ h6 {
 
 .accordion-body {
   font-size: 13px;
-  line-height: 21px;
-  padding: 0 50px 10px 40px; }
+  line-height: 20px;
+  padding: 0 50px 14px 40px;
+  margin-bottom: 3px; }
   .accordion-body p {
     margin-bottom: 6px; }
 
@@ -508,7 +513,10 @@ h6 {
   top: 0;
   right: 0;
   left: 0;
-  padding: 20px 0; }
+  padding: 11px 0; }
+
+.container-fluid {
+  padding: 0; }
 
 .logo {
   display: block; }
@@ -530,21 +538,42 @@ h6 {
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 100%; }
+  .navbar-nav .active:after {
+    width: 100%; }
+
+.navbar-expand-lg,
+.navbar-nav,
+.nav-link {
+  padding: 5px 0 !important; }
 
 .nav-link {
   font-family: "NotoSans-Medium", sans-serif;
-  font-size: 15px;
-  line-height: 21px;
   color: #f8f8f8 !important;
-  padding: 5px 10px; }
+  position: relative; }
+  .nav-link:after {
+    content: '';
+    position: absolute;
+    height: 2px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    background: #f8f8f8;
+    transition: width 0.25s linear; }
   .nav-link:hover {
-    color: #fff !important; }
+    color: #fff; }
+    .nav-link:hover:after {
+      width: 100%; }
 
 .navbar-icons {
   display: flex;
   align-items: center; }
+  .navbar-icons i {
+    font-size: 21px; }
   .navbar-icons a {
     display: block; }
+    .navbar-icons a:hover i {
+      transform: scale3d(1.1, 1.1, 0.2); }
   .navbar-icons i {
     color: #f8f8f8; }
 
@@ -557,7 +586,7 @@ h6 {
   border: none; }
 
 .card-body {
-  padding: 21px 21px 5px; }
+  padding: 21px 21px 2px; }
 
 .card-text {
   font-family: "Poppins", sans-serif;
@@ -566,8 +595,11 @@ h6 {
 
 .card-link {
   font-family: "NotoSans-Regular", sans-serif;
-  line-height: 24px;
-  color: #000; }
+  line-height: 23px;
+  color: #000;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; }
   .card-link:hover {
     text-decoration: underline;
     color: #000; }
@@ -586,7 +618,7 @@ h6 {
 .list-group-item {
   font-family: "NotoSans-Light", sans-serif;
   font-size: 14px;
-  line-height: 19px;
+  line-height: 20px;
   padding: 0 8px; }
   .list-group-item:first-child {
     border-width: 0; }
@@ -596,7 +628,8 @@ h6 {
 .card-price {
   font-family: "NotoSans-Medium", sans-serif;
   font-weight: 500;
-  line-height: 27px; }
+  font-size: 20px;
+  line-height: 28px; }
 
 .card-footer {
   background: #fff;
@@ -611,14 +644,12 @@ h6 {
   background-position: center;
   min-height: 100vh;
   padding: 90px 0;
-  margin-bottom: 50px; }
+  margin-bottom: 100px; }
 
 .banner-content > h1 {
   margin-bottom: 32px; }
 
 .text {
-  font-size: 15px;
-  line-height: 21px;
   color: #f8f8f8; }
 
 .row-content {
@@ -631,7 +662,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: 10px; }
+  margin-bottom: 17px; }
 
 .filter-list {
   display: flex;
@@ -649,7 +680,7 @@ h6 {
   margin-bottom: 120px; }
 
 .row-checked-wrap {
-  margin-bottom: 6px; }
+  margin-bottom: 15px; }
 
 .badge {
   position: absolute;
@@ -658,7 +689,7 @@ h6 {
   border-radius: 0 15px 15px 0;
   font-family: "Poppins", sans-serif;
   font-size: 12px;
-  line-height: 18px;
+  line-height: 17px;
   padding: 4px 20px;
   font-weight: 400; }
 
@@ -672,12 +703,10 @@ h6 {
   justify-content: space-between; }
 
 .application-text {
-  color: #f8f8f8; }
+  color: #f8f8f8;
+  padding-right: 30px; }
   .application-text h4 {
     margin-bottom: 18px; }
-  .application-text p {
-    font-size: 15px;
-    line-height: 21px; }
 
 .application-form {
   display: flex;
@@ -694,8 +723,15 @@ h6 {
 
 .faq {
   margin-bottom: 200px; }
-  .faq > h2 {
-    margin-bottom: 63px; }
+
+.faq-content > h2 {
+  margin-bottom: 57px; }
+
+.card-img-top {
+  border-radius: 0; }
+
+.img-area img {
+  display: flex; }
 
 .footer {
   padding: 40px 0; }

@@ -2,10 +2,10 @@
 @import "../utils/mixin";
 
 .btn {
-  font-size: $font-size-base - 5;
-  line-height: $line-height-base - 3;
+  font-size: $font-size-base;
+  line-height: $line-height-base;
   border-radius: 15px;
-  padding: 10px;
+  padding: 11px;
   width: 100%;
   color: $color-primary-200;
 
@@ -90,8 +90,8 @@
 }
 
 .btn-md {
-  font-size: $font-size-base;
-  line-height: $line-height-base + 3;
+  font-size: $font-size-base + 5;
+  line-height: $line-height-base + 6;
   padding: 12px;
 }
 
