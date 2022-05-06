@@ -3,16 +3,45 @@
 
 .footer {
   padding: 40px 0;
-}
 
-.footer-navbar {
-  @include breakpoint($tablet) {
-    max-width: 100%;
+  @include breakpoint($mobile) {
+    padding: 20px 0 8px;
   }
 }
 
-.footer-nav-item {
-  @include breakpoint($tablet) {
-    margin: 0 10px !important;
+.menu-footer {
+  display: flex;
+  justify-content: center;
+
+  @include breakpoint($mobile) {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .menu-link {
+    color: $color-secondary-500;
+
+    @include breakpoint($mobile) {
+      text-align: center;
+    }
+  }
+}
+
+.menu-footer-item {
+  margin: 0 20px;
+
+  @include breakpoint($mobile) {
+    margin: 0;
+    width: 100%;
+  }
+}
+
+.footer-social-network {
+  @include breakpoint($mobile) {
+    border-top: 1px solid $color-secondary-500;
+  }
+
+  i {
+    color: $color-secondary-500;
   }
 }

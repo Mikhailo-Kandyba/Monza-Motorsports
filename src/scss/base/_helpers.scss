@@ -25,12 +25,10 @@
   color: $color-secondary-100 !important;
 }
 
-.pl-sm-10 {
-  @include breakpoint($mobile) {
-    padding-left: 10px;
-  }
-}
-
 .max-width-295 {
   max-width: 295px !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }

@@ -18,12 +18,15 @@
   transition: all 0.2s ease-in-out;
   user-select: none;
   white-space: nowrap;
-  //max-width: 170px;
   width: 100%;
   padding: 0 27px 0 17px;
 
+  @include breakpoint($tablet) {
+    padding: 0 27px 0 9px;
+  }
+
   @include breakpoint($mobile) {
-    height: 27px;
+    height: 33px;
     padding: 0 8px;
   }
 
@@ -70,7 +73,7 @@
     left: -1px;
     right: -1px;
     transform-origin: 50% 0;
-    transform: scale(.75) translateY(- 42px / 2);
+    transform: scale(.75) translateY(- 42px);
     transition: all .2s cubic-bezier(0.5, 0, 0, 1.25), opacity .15s ease-out;
     z-index: 9;
 
@@ -139,6 +142,12 @@
       display: block;
     }
   }
+}
+
+.current {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 //sorting-select

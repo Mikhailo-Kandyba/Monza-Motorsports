@@ -22,7 +22,6 @@
     box-shadow: none;
     background-color: $color-secondary-500;
     color: $color-primary-300;
-    padding: 26px 47px 23px 40px;
     border: none;
 
     @include breakpoint($mobile) {
@@ -31,6 +30,7 @@
 
     &:after {
       background-image: url("../images/minus.svg");
+      margin-top: -11px;
     }
   }
 
