@@ -31,6 +31,11 @@
         border-right: none;
         transform: rotate(-50deg);
         display: none;
+
+        @include breakpoint($mobile) {
+          top: 3px;
+          left: 5px;
+        }
       }
     }
 

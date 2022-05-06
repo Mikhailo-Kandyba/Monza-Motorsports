@@ -320,6 +320,10 @@ h6 {
     border-right: none;
     transform: rotate(-50deg);
     display: none; }
+    @media only screen and (max-width: 767px) {
+      .checkbox-custom + .checkbox-custom-label:after {
+        top: 3px;
+        left: 5px; } }
   .checkbox-custom:checked + .checkbox-custom-label {
     color: #df4e3c; }
     .checkbox-custom:checked + .checkbox-custom-label:before {
