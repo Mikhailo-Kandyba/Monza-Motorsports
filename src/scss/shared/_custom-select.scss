@@ -20,7 +20,7 @@
   white-space: nowrap;
   //max-width: 170px;
   width: 100%;
-  padding: 0 17px;
+  padding: 0 27px 0 17px;
 
   @include breakpoint($mobile) {
     height: 27px;
@@ -93,6 +93,11 @@
     padding: 7px 17px;
     text-align: left;
     transition: all 0.2s;
+    width: 100%;
+
+    @include breakpoint($mobile) {
+      padding: 7px 8px;
+    }
 
     &:hover {
       color: $color-primary-300;

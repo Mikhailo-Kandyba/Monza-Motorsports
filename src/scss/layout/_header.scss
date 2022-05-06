@@ -48,6 +48,14 @@
     border-radius: 15px;
     padding: 10px;
   }
+
+  .navbar-icons {
+    li {
+      @include breakpoint($tablet) {
+        margin: 0 10px !important;
+      }
+    }
+  }
 }
 
 .navbar-nav {
@@ -128,6 +136,10 @@
   li {
     @include breakpoint($tablet) {
       margin: 0 10px !important;
+    }
+
+    @include breakpoint($mobile) {
+      margin: 0 2px !important;
     }
   }
 }

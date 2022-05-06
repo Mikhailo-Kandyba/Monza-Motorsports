@@ -14,12 +14,20 @@
   padding: 22px 33px 22px 25px;
   border-bottom: 1px solid $color-secondary-400;
 
+  @include breakpoint($mobile) {
+    padding: 12px 5px;
+  }
+
   &:not(.collapsed) {
     box-shadow: none;
     background-color: $color-secondary-500;
     color: $color-primary-300;
     padding: 26px 47px 23px 40px;
     border: none;
+
+    @include breakpoint($mobile) {
+      padding: 12px 5px;
+    }
 
     &:after {
       background-image: url("../images/minus.svg");
@@ -51,6 +59,10 @@
   line-height: $line-height-base - 1;
   padding: 0 50px 14px 40px;
   margin-bottom: 3px;
+
+  @include breakpoint($mobile) {
+    padding: 0 10px 10px 10px;
+  }
 
   p {
     margin-bottom: 6px;

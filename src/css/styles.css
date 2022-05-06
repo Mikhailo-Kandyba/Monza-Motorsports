@@ -164,6 +164,10 @@ h4 {
   font-size: 25px;
   line-height: 34px;
   font-weight: 600; }
+  @media only screen and (max-width: 767px) {
+    h4 {
+      font-size: 20px;
+      line-height: 23px; } }
 
 h5 {
   font-family: "NotoSans-Medium", sans-serif;
@@ -194,6 +198,10 @@ h6 {
 
 .text-light {
   color: #aeaeae !important; }
+
+@media only screen and (max-width: 767px) {
+  .pl-sm-10 {
+    padding-left: 10px; } }
 
 .btn {
   font-size: 15px;
@@ -353,7 +361,7 @@ h6 {
   user-select: none;
   white-space: nowrap;
   width: 100%;
-  padding: 0 17px; }
+  padding: 0 27px 0 17px; }
   @media only screen and (max-width: 767px) {
     .nice-select {
       height: 27px;
@@ -407,7 +415,11 @@ h6 {
     outline: none;
     padding: 7px 17px;
     text-align: left;
-    transition: all 0.2s; }
+    transition: all 0.2s;
+    width: 100%; }
+    @media only screen and (max-width: 767px) {
+      .nice-select .option {
+        padding: 7px 8px; } }
     .nice-select .option:hover {
       color: #df4e3c; }
     .nice-select .option.selected {
@@ -524,12 +536,18 @@ h6 {
   background-color: #f8f8f8;
   padding: 22px 33px 22px 25px;
   border-bottom: 1px solid #c4c4c4; }
+  @media only screen and (max-width: 767px) {
+    .accordion-button {
+      padding: 12px 5px; } }
   .accordion-button:not(.collapsed) {
     box-shadow: none;
     background-color: #fff;
     color: #df4e3c;
     padding: 26px 47px 23px 40px;
     border: none; }
+    @media only screen and (max-width: 767px) {
+      .accordion-button:not(.collapsed) {
+        padding: 12px 5px; } }
     .accordion-button:not(.collapsed):after {
       background-image: url("../images/minus.svg"); }
   .accordion-button:after {
@@ -550,6 +568,9 @@ h6 {
   line-height: 20px;
   padding: 0 50px 14px 40px;
   margin-bottom: 3px; }
+  @media only screen and (max-width: 767px) {
+    .accordion-body {
+      padding: 0 10px 10px 10px; } }
   .accordion-body p {
     margin-bottom: 6px; }
 
@@ -591,6 +612,9 @@ h6 {
       background: #8d8d8d;
       border-radius: 15px;
       padding: 10px; } }
+  @media only screen and (max-width: 1023px) {
+    .navbar-collapse .navbar-icons li {
+      margin: 0 10px !important; } }
 
 .navbar-nav {
   justify-content: flex-end;
@@ -645,6 +669,9 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .navbar-icons li {
       margin: 0 10px !important; } }
+  @media only screen and (max-width: 767px) {
+    .navbar-icons li {
+      margin: 0 2px !important; } }
 
 .navbar-light .navbar-toggler {
   border: none; }
@@ -672,16 +699,28 @@ h6 {
   border-radius: 0;
   background: #fff;
   border: none; }
+  @media only screen and (max-width: 767px) {
+    .card {
+      max-width: 340px; } }
 
 .card-body {
   padding: 21px 21px 2px; }
   @media only screen and (max-width: 1399px) {
     .card-body {
       padding: 21px 15px 2px; } }
+  @media only screen and (max-width: 1023px) {
+    .card-body {
+      padding: 21px 8px 2px; } }
 
 .card-text {
   font-size: 17px;
   line-height: 26px; }
+  @media only screen and (max-width: 1023px) {
+    .card-text {
+      font-size: 15px; } }
+  @media only screen and (max-width: 767px) {
+    .card-text {
+      line-height: 20px; } }
   .card-text > span {
     font-family: "Poppins", sans-serif;
     font-weight: 400; }
@@ -693,6 +732,9 @@ h6 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis; }
+  @media only screen and (max-width: 767px) {
+    .card-link {
+      line-height: 19px; } }
   .card-link:hover {
     text-decoration: underline;
     color: #000; }
@@ -704,6 +746,9 @@ h6 {
   @media only screen and (max-width: 1399px) {
     .list-group {
       padding: 10px 7px; } }
+  @media only screen and (max-width: 1023px) {
+    .list-group {
+      padding: 10px 0; } }
 
 .card > .list-group {
   border: none; }
@@ -716,6 +761,12 @@ h6 {
   font-size: 14px;
   line-height: 20px;
   padding: 0 8px; }
+  @media only screen and (max-width: 1023px) {
+    .list-group-item {
+      font-size: 12px; } }
+  @media only screen and (max-width: 767px) {
+    .list-group-item {
+      font-size: 14px; } }
   .list-group-item:first-child {
     border-width: 0; }
   .list-group-item:last-child {
@@ -726,6 +777,10 @@ h6 {
   font-weight: 500;
   font-size: 20px;
   line-height: 28px; }
+  @media only screen and (max-width: 1023px) {
+    .card-price {
+      font-size: 19px;
+      line-height: 25px; } }
 
 .card-footer {
   background: #fff;
@@ -733,6 +788,9 @@ h6 {
   @media only screen and (max-width: 1399px) {
     .card-footer {
       padding: 15px 15px 35px; } }
+  @media only screen and (max-width: 1023px) {
+    .card-footer {
+      padding: 10px 8px 21px; } }
 
 .banner {
   display: flex;
@@ -806,6 +864,9 @@ h6 {
       padding: 20px 0;
       border-radius: 15px; } }
   @media only screen and (max-width: 767px) {
+    .filter-area .btn-holder {
+      padding: 0 5px; } }
+  @media only screen and (max-width: 767px) {
     .filter-area.show-filter {
       display: flex; } }
 
@@ -816,6 +877,9 @@ h6 {
   flex-wrap: wrap;
   width: 100%;
   margin: 0 -10px; }
+  @media only screen and (max-width: 1199px) {
+    .filter-list {
+      margin: 0 -5px; } }
   @media only screen and (max-width: 1023px) {
     .filter-list {
       margin: 0 -5px;
@@ -824,6 +888,9 @@ h6 {
   .filter-list li {
     padding: 0 10px;
     width: 20%; }
+    @media only screen and (max-width: 1199px) {
+      .filter-list li {
+        padding: 0 5px; } }
     @media only screen and (max-width: 1023px) {
       .filter-list li {
         padding: 0 5px;
@@ -839,6 +906,9 @@ h6 {
   @media only screen and (max-width: 1399px) {
     .btn-holder {
       max-width: 250px; } }
+  @media only screen and (max-width: 1199px) {
+    .btn-holder {
+      max-width: 210px; } }
   @media only screen and (max-width: 1023px) {
     .btn-holder {
       max-width: 230px; } }
@@ -852,6 +922,9 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .catalog {
       margin-bottom: 80px; } }
+  @media only screen and (max-width: 767px) {
+    .catalog {
+      margin-bottom: 25px; } }
 
 .row-checked-wrap {
   margin-bottom: 15px; }
@@ -873,6 +946,10 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .application-wrap {
       margin-bottom: 80px; } }
+  @media only screen and (max-width: 767px) {
+    .application-wrap {
+      padding: 24px 0 26px;
+      margin-bottom: 25px; } }
 
 .application-area {
   display: flex;
@@ -885,8 +962,14 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .application-text {
       padding-right: 0; } }
+  @media only screen and (max-width: 767px) {
+    .application-text {
+      margin-bottom: 8px; } }
   .application-text h4 {
     margin-bottom: 18px; }
+    @media only screen and (max-width: 767px) {
+      .application-text h4 {
+        margin-bottom: 8px; } }
 
 .application-form {
   display: flex;
@@ -906,7 +989,8 @@ h6 {
     width: 100%; }
     @media only screen and (max-width: 1023px) {
       .application-form form {
-        margin-bottom: 10px; } }
+        margin-bottom: 10px;
+        max-width: 100%; } }
   .application-form input {
     height: 55px;
     background: transparent; }
@@ -916,12 +1000,18 @@ h6 {
   @media only screen and (max-width: 1023px) {
     .faq {
       margin-bottom: 80px; } }
+  @media only screen and (max-width: 767px) {
+    .faq {
+      margin-bottom: 25px; } }
 
 .faq-content > h2 {
   margin-bottom: 57px; }
   @media only screen and (max-width: 1023px) {
     .faq-content > h2 {
       margin-bottom: 27px; } }
+  @media only screen and (max-width: 767px) {
+    .faq-content > h2 {
+      margin-bottom: 12px; } }
 
 .card-img-top {
   border-radius: 0; }

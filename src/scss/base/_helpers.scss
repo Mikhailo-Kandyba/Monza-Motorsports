@@ -24,3 +24,9 @@
 .text-light {
   color: $color-secondary-100 !important;
 }
+
+.pl-sm-10 {
+  @include breakpoint($mobile) {
+    padding-left: 10px;
+  }
+}

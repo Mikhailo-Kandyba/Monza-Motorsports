@@ -7,6 +7,10 @@
   border-radius: 0;
   background: $color-secondary-500;
   border: none;
+
+  @include breakpoint($mobile) {
+    max-width: 340px;
+  }
 }
 
 .card-body {
@@ -15,11 +19,23 @@
   @include breakpoint($desktop-lg) {
     padding: 21px 15px 2px;
   }
+
+  @include breakpoint($tablet) {
+    padding: 21px 8px 2px;
+  }
 }
 
 .card-text {
   font-size: $font-size-base + 2;
   line-height: $line-height-base + 5;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base;
+  }
+
+  @include breakpoint($mobile) {
+    line-height: $line-height-base - 1;
+  }
 
   > span {
     font-family: $poppins-font;
@@ -35,6 +51,10 @@
   overflow: hidden;
   text-overflow: ellipsis;
 
+  @include breakpoint($mobile) {
+    line-height: $line-height-base - 2 ;
+  }
+
   &:hover {
     text-decoration: underline;
     color: $color-primary-100;
@@ -48,6 +68,10 @@
 
   @include breakpoint($desktop-lg) {
     padding: 10px 7px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 10px 0;
   }
 }
 
@@ -69,6 +93,14 @@
   line-height: $line-height-base - 1;
   padding: 0 8px;
 
+  @include breakpoint($tablet) {
+    font-size: $font-size-base - 3;
+  }
+
+  @include breakpoint($mobile) {
+    font-size: $font-size-base - 1;
+  }
+
   &:first-child {
     border-width: 0;
   }
@@ -83,6 +115,11 @@
   font-weight: $font-weight-500;
   font-size: $font-size-base + 5;
   line-height: $line-height-base + 7;
+
+  @include breakpoint($tablet) {
+    font-size: $font-size-base + 4;
+    line-height: $line-height-base + 4;
+  }
 }
 
 .card-footer {
@@ -91,6 +128,10 @@
 
   @include breakpoint($desktop-lg) {
     padding: 15px 15px 35px;
+  }
+
+  @include breakpoint($tablet) {
+    padding: 10px 8px 21px;
   }
 }
 
@@ -185,6 +226,12 @@
     border-radius: 15px;
   }
 
+  .btn-holder {
+    @include breakpoint($mobile) {
+      padding: 0 5px;
+    }
+  }
+
   &.show-filter {
     @include breakpoint($mobile) {
       display: flex;
@@ -200,6 +247,10 @@
   width: 100%;
   margin: 0 -10px;
 
+  @include breakpoint($desktop) {
+    margin: 0 -5px;
+  }
+
   @include breakpoint($tablet) {
     margin: 0 -5px;
     justify-content: flex-start;
@@ -209,6 +260,10 @@
   li {
     padding: 0 10px;
     width: 20%;
+
+    @include breakpoint($desktop) {
+      padding: 0 5px;
+    }
 
     @include breakpoint($tablet) {
       padding: 0 5px;
@@ -230,6 +285,10 @@
     max-width: 250px;
   }
 
+  @include breakpoint($desktop) {
+    max-width: 210px;
+  }
+
   @include breakpoint($tablet) {
     max-width: 230px;
   }
@@ -245,6 +304,10 @@
 
   @include breakpoint($tablet) {
     margin-bottom: 80px;
+  }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
   }
 }
 
@@ -271,6 +334,11 @@
   @include breakpoint($tablet) {
     margin-bottom: 80px;
   }
+
+  @include breakpoint($mobile) {
+    padding: 24px 0 26px;
+    margin-bottom: 25px;
+  }
 }
 
 .application-area {
@@ -287,8 +355,16 @@
     padding-right: 0;
   }
 
+  @include breakpoint($mobile) {
+    margin-bottom: 8px;
+  }
+
   h4 {
     margin-bottom: 18px;
+
+    @include breakpoint($mobile) {
+      margin-bottom: 8px;
+    }
   }
 }
 
@@ -316,6 +392,7 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 10px;
+      max-width: 100%;
     }
   }
 
@@ -331,6 +408,10 @@
   @include breakpoint($tablet) {
     margin-bottom: 80px;
   }
+
+  @include breakpoint($mobile) {
+    margin-bottom: 25px;
+  }
 }
 
 .faq-content {
@@ -339,6 +420,10 @@
 
     @include breakpoint($tablet) {
       margin-bottom: 27px;
+    }
+
+    @include breakpoint($mobile) {
+      margin-bottom: 12px;
     }
   }
 }
