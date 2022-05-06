@@ -169,6 +169,8 @@
     border-radius: 15px;
     background: $color-secondary-500;
     padding: 7px 0;
+    -webkit-box-shadow: 0 1px 10px -2px $color-secondary-200;
+    box-shadow: 0 1px 10px -2px $color-secondary-200;
   }
 
   .option {

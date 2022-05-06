@@ -438,7 +438,16 @@
   }
 }
 
+.sold-active {
+  position: relative;
+
+  .sold {
+    display: block;
+  }
+}
+
 .sold {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;

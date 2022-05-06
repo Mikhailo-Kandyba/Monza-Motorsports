@@ -470,7 +470,9 @@ h6 {
     border: none;
     border-radius: 15px;
     background: #fff;
-    padding: 7px 0; }
+    padding: 7px 0;
+    -webkit-box-shadow: 0 1px 10px -2px #8d8d8d;
+    box-shadow: 0 1px 10px -2px #8d8d8d; }
   .sorting-select .option {
     font-size: 12px;
     line-height: 17px;
@@ -1026,7 +1028,13 @@ h6 {
 .img-area img {
   display: flex; }
 
+.sold-active {
+  position: relative; }
+  .sold-active .sold {
+    display: block; }
+
 .sold {
+  display: none;
   position: absolute;
   top: 0;
   right: 0;
